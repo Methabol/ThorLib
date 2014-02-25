@@ -1,0 +1,35 @@
+
+Identifier = "ThorLib_Database"
+Name = "ThorLib_Database"
+Description = "ThorLib Database for buffs and abilities"
+
+Author = "Thorstein@deepwood"
+Website = "-"
+Email = "methabol@gmail.com"
+
+Version = "0.1.0"
+
+Environment = "2.2"
+
+RunOnStartup = {
+  "ThorLib_db.lua",
+  "ThorLib_db_buff.lua",
+  "ThorLib_db_ability.lua",
+}
+
+Embed = {
+}
+
+Dependencies = {
+  ThorLib = { "required", "before" },
+}
+
+SavedVariables = {
+  ThorLib_db_saved_char = "character",
+  ThorLib_db_saved_shard = "shard",
+  ThorLib_db_saved_global = "global",
+}
+
+
+
+

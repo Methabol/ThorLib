@@ -1,0 +1,53 @@
+
+Identifier = "ThorLib"
+Name = "ThorLib"
+Description = "Library functions for Thorstein's Addons"
+
+Author = "Thorstein@deepwood"
+Website = "-"
+Email = "methabol@gmail.com"
+
+Version = "0.1.0"
+
+Environment = "2.2"
+
+RunOnStartup = {
+  "ThorLib_main.lua",
+  "ThorLib_module.lua",
+  --
+  "ThorLib_table.lua",
+  "ThorLib_misc.lua", 
+--  "ThorLib_debug.lua",
+--  "ThorLib_init.lua",
+  "ThorLib_scheduler.lua",
+  "ThorLib_queue.lua",
+--FIXME  "ThorLib_events.lua",     --FIXME remove
+  "ThorLib_roles.lua",
+--FIXME  "ThorLib_coro.lua",
+  "ThorLib_cache.lua",
+--  "ThorLib_database.lua",   --FIXME separate
+  "ThorLib_reset.lua",
+--FIXME  "ThorLib_zone.lua",       --FIXME check
+  "ThorLib_inventory.lua",
+  "ThorLib_cross.lua",
+  "ThorLib_ui.lua",
+  "ThorLib_mail.lua",
+}
+
+Embed = {
+  ThorLib_Database = true,
+  ThorLib_UI = true,
+}
+
+Dependencies = {
+}
+
+SavedVariables = {
+  ThorLib_saved_char = "character",
+  ThorLib_saved_shard = "shard",
+  ThorLib_saved_global = "global",
+}
+
+
+
+

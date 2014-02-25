@@ -1,0 +1,38 @@
+
+Identifier = "ThorLib_UI"
+Name = "ThorLib_UI"
+Description = "ThorLib_UI"
+
+Author = "Thorstein@deepwood"
+Website = "-"
+Email = "methabol@gmail.com"
+
+Version = "0.1.0"
+
+Environment = "2.2"
+
+RunOnStartup = {
+  "ThorLib_ui_main.lua",
+  "ThorLib_ui_methods.lua",
+  "ThorLib_ui_button_list.lua",
+  "ThorLib_ui_colors.lua",
+  "ThorLib_ui_draggable.lua",
+  "ThorLib_ui_resources.lua",
+}
+
+Embed = {
+}
+
+Dependencies = {
+  ThorLib = { "required", "before" },
+}
+
+SavedVariables = {
+  ThorLib_ui_saved_char = "character",
+  ThorLib_ui_saved_shard = "shard",
+  ThorLib_ui_saved_global = "global",
+}
+
+
+
+
